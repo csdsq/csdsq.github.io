@@ -1,5 +1,5 @@
 ---
-title: 0402 AI应用：每天获取最新EHS法规信息
+title: AI应用：每天获取最新EHS法规信息
 date: '2026-04-01 19:24:12'
 permalink: >-
   /post/0402-ai-application-get-the-latest-ehs-regulatory-information-every-day-zvrvld.html
@@ -7,9 +7,6 @@ layout: post
 published: true
 ---
 
-
-
-# AI应用：每天获取最新EHS法规信息
 
 最近使用AI工具做了一个每天获取全国各地最新EHS法规新的应用，分享一下。
 
