@@ -74,22 +74,16 @@ social_preview_image:
 toc: true
 
 comments:
-  provider:
-  disqus:
-    shortname:
-  utterances:
-    repo:
-    issue_term:
+  provider: giscus
   giscus:
-    repo:
-    repo_id:
-    category:
-    category_id:
-    mapping:
-    strict:
-    input_position:
-    lang:
-    reactions_enabled:
+    repo: csdsq/csdsq.github.io
+    repo_id: R_kgDOR7RW9Q
+    category: General
+    category_id: DIC_kwDOR7RW9c4C6d-J
+    mapping: pathname
+    input_position: bottom
+    lang: zh-CN
+    reactions_enabled: 1
 
 assets:
   self_host:
@@ -173,4 +167,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-
