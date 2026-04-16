@@ -18,7 +18,7 @@ published: true
 
 ‍
 
-1、为什么看不到数据文件？
+**1、为什么看不到数据文件？**
 
 表现是思源笔记在群晖部署正常、使用也正常，但是进如docker文件夹里面的siyuan文件夹，看不到文档数据。
 
@@ -34,7 +34,7 @@ published: true
 
 ‍
 
-2、为什么安装成功后反而总是启动不成功？
+**2、为什么安装成功后反而总是启动不成功？**
 
 表现是安装成功，但是启动后总是频繁提示错误信息，无法正常启动。
 
@@ -52,7 +52,7 @@ published: true
 
 ‍
 
-群晖部署思源笔记的详细教程可以查看这个链接：https://www.doubao.com/thread/w32f5426e839a14d4
+群晖部署思源笔记的详细教程可以查看这个链接：[https://www.doubao.com/thread/w32f5426e839a14d4](https://www.doubao.com/thread/w32f5426e839a14d4)
 
 ‍
 
