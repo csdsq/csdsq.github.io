@@ -1,5 +1,5 @@
 ---
-title: 0413 思源笔记安装问题2项
+title: 群晖部署思源笔记安装问题2项
 date: '2026-04-13 21:06:29'
 permalink: /post/0413-2-installation-issues-of-siyuan-notes-1tdren.html
 layout: post
@@ -43,7 +43,7 @@ published: true
 解决办法就是在安装部署的事后设置口令，如下图，在命令栏位输入下面的代码，其中XXX位置就是口令，可以自定义，不限制位数。
 
 ```
--workspace /siyuan/workspace/ -accessAuthCode 123456
+-workspace /siyuan/workspace/ -accessAuthCode XXX
 ```
 
 ![01](https://blog.hser.ren/assets/20260416214901.png)
