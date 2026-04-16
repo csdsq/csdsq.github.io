@@ -1,6 +1,12 @@
 ---
 title: 群晖部署思源笔记安装问题2项
 date: '2026-04-13 21:06:29'
+categories:
+  - 软件
+tags:
+  - NAS
+  - 群晖
+  - 思源笔记
 permalink: /post/0413-2-installation-issues-of-siyuan-notes-1tdren.html
 layout: post
 published: true
