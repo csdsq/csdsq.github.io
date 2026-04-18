@@ -1,6 +1,14 @@
 ---
 title: AI应用：每天获取最新EHS法规信息
 date: '2026-04-01 19:24:12'
+categories:
+  - EHS
+tags:
+  - AI
+  - 法规
+  - 安全
+  - 环保
+  - 职业健康
 permalink: >-
   /post/0402-ai-application-get-the-latest-ehs-regulatory-information-every-day-zvrvld.html
 layout: post
