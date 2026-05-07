@@ -1,6 +1,12 @@
 ---
 title: 5月5日的梦境记忆
 date: '2026-05-05 22:31:25'
+categories:
+  - 生活
+tags:
+  - 潜意识
+  - 梦境
+  - 森林
 permalink: /post/dream-memory-of-may-5th-1thnhd.html
 layout: post
 published: true
@@ -39,3 +45,6 @@ published: true
 ‍
 
 6、 进入马路之后，前面没多远就是一个观景台。站在观景台上回看来时路，竟然又看不真切原始部落，只能看到绿葱葱的一片树木、森林。
+
+
+
