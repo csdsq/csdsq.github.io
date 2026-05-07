@@ -1,6 +1,11 @@
 ---
 title: 5月5日的梦境记忆
 date: '2026-05-05 22:31:25'
+categories:
+  - 生活
+tags:
+  - 梦境
+  - 随笔
 permalink: /post/dream-memory-of-may-5th-1thnhd.html
 layout: post
 published: true
