@@ -1,6 +1,13 @@
 ---
 title: 扣子实现PT全自动保活
 date: '2026-05-08 22:48:05'
+categories:
+  - 生活
+tags:
+  - PT
+  - AI
+  - 软件
+  - 技能
 permalink: /post/buttons-realize-fully-automatic-keep-alive-of-pt-1qhniq.html
 layout: post
 published: true
