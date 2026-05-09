@@ -10,7 +10,7 @@ order: 4
 
 网址：[https://blog.hser.ren](https://blog.hser.ren)
 
-联系我：[csdsq@qq.com](csdsq@qq.com)
+联系我：[csdsq@qq.com](mailto:csdsq@qq.com)
 
 
 > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
