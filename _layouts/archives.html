@@ -5,126 +5,185 @@ layout: page
 
 {% include lang.html %}
 
-{% assign df_strftime_m = site.data.locales[lang].df.archives.strftime | default: '/ %m' %}
-{% assign df_dayjs_m = site.data.locales[lang].df.archives.dayjs | default: '/ MM' %}
-
 <style>
-/* 归档页折叠样式 */
-#archives .archive-year {
-  margin-bottom: 1rem;
+/* ===== 完全覆盖 Chirpy 默认归档样式 ===== */
+#archives {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
 }
 
+#archives .archive-year {
+  margin-bottom: 1.2rem;
+}
+
+/* 年份头部 */
 #archives .year-header {
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 0.3rem 0;
+  padding: 0.5rem 0.8rem;
   user-select: none;
-  border-bottom: 1px solid var(--archive-border-color, #dee2e6);
+  border-bottom: 1px solid var(--main-border-color, #dee2e6);
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+#archives .year-header:hover {
+  background-color: rgba(0, 0, 0, 0.03);
 }
 
 #archives .year-header .year {
   font-weight: 600;
+  font-size: 1.2rem;
   margin-right: 0.5rem;
+  color: var(--heading-color, #2a2a2a);
+}
+
+/* 覆盖 Chirpy 默认的 year::before 和 year::after 伪元素 */
+#archives .year::before,
+#archives .year::after {
+  display: none !important;
+  content: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  border: none !important;
+  background: none !important;
 }
 
 #archives .year-header .post-count {
-  font-size: 0.8rem;
-  color: var(--text-muted, #6c757d);
+  font-size: 0.85rem;
+  color: var(--text-muted-color, #6c757d);
   margin-right: auto;
 }
 
 #archives .year-header .collapse-icon {
   transition: transform 0.3s ease;
-  color: var(--text-muted, #6c757d);
+  color: var(--text-muted-color, #6c757d);
   font-size: 0.9rem;
+  margin-left: 0.5rem;
 }
 
 #archives .year-header[aria-expanded="false"] .collapse-icon {
   transform: rotate(-90deg);
 }
 
-#archives .archive-month {
-  margin-left: 1.2rem;
-  margin-bottom: 0.3rem;
+/* 年份内容区 */
+#archives .year-content {
+  padding-left: 1.5rem;
+  margin-top: 0.3rem;
+  border-left: 2px solid var(--timeline-color, #e9ecef);
+  margin-left: 0.5rem;
 }
 
+/* 月份分组 */
+#archives .archive-month {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+/* 月份圆点 */
+#archives .archive-month::before {
+  content: "";
+  position: absolute;
+  left: -1.75rem;
+  top: 0.55rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--timeline-year-dot-color, #999);
+  border: 2px solid #fff;
+  z-index: 1;
+}
+
+/* 月份头部 */
 #archives .month-header {
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 0.25rem 0;
+  padding: 0.3rem 0.6rem;
   user-select: none;
   color: var(--heading-color, #2a2a2a);
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+#archives .month-header:hover {
+  background-color: rgba(0, 0, 0, 0.03);
 }
 
 #archives .month-header .month {
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin-right: 0.4rem;
 }
 
 #archives .month-header .post-count {
-  font-size: 0.75rem;
-  color: var(--text-muted, #6c757d);
+  font-size: 0.8rem;
+  color: var(--text-muted-color, #6c757d);
   margin-right: auto;
 }
 
 #archives .month-header .collapse-icon {
   transition: transform 0.3s ease;
-  color: var(--text-muted, #6c757d);
+  color: var(--text-muted-color, #6c757d);
   font-size: 0.8rem;
+  margin-left: 0.3rem;
 }
 
 #archives .month-header[aria-expanded="false"] .collapse-icon {
   transform: rotate(-90deg);
 }
 
+/* 文章列表 */
 #archives .month-content {
-  margin-left: 1rem;
+  padding-left: 0.8rem;
+  margin-left: 0.5rem;
 }
 
 #archives .month-content ul {
   padding-left: 0;
   margin-bottom: 0.5rem;
+  list-style: none;
 }
 
 #archives .month-content li {
   position: relative;
-  padding-left: 1.8rem;
-  line-height: 2;
+  padding: 0.3rem 0 0.3rem 1.4rem;
+  line-height: 1.8;
 }
 
-/* 时间轴连线 */
+/* 文章圆点 */
 #archives .month-content li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0.75em;
-  width: 0.45rem;
-  height: 0.45rem;
+  top: 0.7rem;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  background: var(--timeline-dot-color, #999);
+  background: var(--timeline-color, #ccc);
 }
 
+/* 文章连线 */
 #archives .month-content li::after {
   content: "";
   position: absolute;
-  left: 0.2rem;
-  top: 1.2em;
+  left: 2.5px;
+  top: 1.3rem;
   width: 1px;
-  height: calc(100% - 0.8em);
-  background: var(--timeline-line-color, #dee2e6);
+  height: calc(100% - 0.5rem);
+  background: var(--timeline-color, #e9ecef);
 }
 
 #archives .month-content li:last-child::after {
   display: none;
 }
 
+/* 日期 */
 #archives .month-content .date {
   display: inline-block;
-  min-width: 2rem;
-  color: var(--text-muted, #6c757d);
+  min-width: 2.2rem;
+  color: var(--text-muted-color, #6c757d);
   font-size: 0.85rem;
   margin-right: 0.3rem;
 }
@@ -132,6 +191,23 @@ layout: page
 /* 暗色模式适配 */
 [data-mode="dark"] #archives .year-header {
   border-bottom-color: #495057;
+}
+
+[data-mode="dark"] #archives .year-header:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-mode="dark"] #archives .year-content {
+  border-left-color: #495057;
+}
+
+[data-mode="dark"] #archives .archive-month::before {
+  background: #6c757d;
+  border-color: #1a1a2e;
+}
+
+[data-mode="dark"] #archives .month-header:hover {
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 [data-mode="dark"] #archives .month-content li::before {
@@ -148,11 +224,11 @@ layout: page
   {% for year_group in posts_by_year %}
   <div class="archive-year">
     <div class="year-header" data-bs-toggle="collapse" data-bs-target="#year-{{ year_group.name }}" aria-expanded="true" aria-controls="year-{{ year_group.name }}">
-      <time class="year lead">{{ year_group.name }}</time>
+      <span class="year">{{ year_group.name }}</span>
       <span class="post-count">{{ year_group.items | size }} 篇</span>
       <i class="fas fa-fw fa-angle-down collapse-icon"></i>
     </div>
-    <div id="year-{{ year_group.name }}" class="collapse show">
+    <div id="year-{{ year_group.name }}" class="year-content collapse show">
       {% assign posts_by_month = year_group.items | group_by_exp: "post", "post.date | date: '%m'" %}
       {% for month_group in posts_by_month %}
       <div class="archive-month">
@@ -161,7 +237,7 @@ layout: page
           <span class="post-count">{{ month_group.items | size }} 篇</span>
           <i class="fas fa-fw fa-angle-down collapse-icon"></i>
         </div>
-        <div id="month-{{ year_group.name }}-{{ month_group.name }}" class="collapse show">
+        <div id="month-{{ year_group.name }}-{{ month_group.name }}" class="month-content collapse show">
           <ul class="list-unstyled">
             {% for post in month_group.items %}
             <li>
