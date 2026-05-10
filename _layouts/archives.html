@@ -1,0 +1,179 @@
+---
+layout: page
+# The Archives of posts — with monthly grouping and collapsible sections.
+---
+
+{% include lang.html %}
+
+{% assign df_strftime_m = site.data.locales[lang].df.archives.strftime | default: '/ %m' %}
+{% assign df_dayjs_m = site.data.locales[lang].df.archives.dayjs | default: '/ MM' %}
+
+<style>
+/* 归档页折叠样式 */
+#archives .archive-year {
+  margin-bottom: 1rem;
+}
+
+#archives .year-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.3rem 0;
+  user-select: none;
+  border-bottom: 1px solid var(--archive-border-color, #dee2e6);
+}
+
+#archives .year-header .year {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+#archives .year-header .post-count {
+  font-size: 0.8rem;
+  color: var(--text-muted, #6c757d);
+  margin-right: auto;
+}
+
+#archives .year-header .collapse-icon {
+  transition: transform 0.3s ease;
+  color: var(--text-muted, #6c757d);
+  font-size: 0.9rem;
+}
+
+#archives .year-header[aria-expanded="false"] .collapse-icon {
+  transform: rotate(-90deg);
+}
+
+#archives .archive-month {
+  margin-left: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+#archives .month-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.25rem 0;
+  user-select: none;
+  color: var(--heading-color, #2a2a2a);
+}
+
+#archives .month-header .month {
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-right: 0.4rem;
+}
+
+#archives .month-header .post-count {
+  font-size: 0.75rem;
+  color: var(--text-muted, #6c757d);
+  margin-right: auto;
+}
+
+#archives .month-header .collapse-icon {
+  transition: transform 0.3s ease;
+  color: var(--text-muted, #6c757d);
+  font-size: 0.8rem;
+}
+
+#archives .month-header[aria-expanded="false"] .collapse-icon {
+  transform: rotate(-90deg);
+}
+
+#archives .month-content {
+  margin-left: 1rem;
+}
+
+#archives .month-content ul {
+  padding-left: 0;
+  margin-bottom: 0.5rem;
+}
+
+#archives .month-content li {
+  position: relative;
+  padding-left: 1.2rem;
+  line-height: 2;
+}
+
+/* 时间轴连线 */
+#archives .month-content li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.85em;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--timeline-dot-color, #999);
+}
+
+#archives .month-content li::after {
+  content: "";
+  position: absolute;
+  left: 0.22rem;
+  top: 1.35em;
+  width: 1px;
+  height: calc(100% - 0.85em);
+  background: var(--timeline-line-color, #dee2e6);
+}
+
+#archives .month-content li:last-child::after {
+  display: none;
+}
+
+#archives .month-content .date {
+  display: inline-block;
+  min-width: 2rem;
+  color: var(--text-muted, #6c757d);
+  font-size: 0.85rem;
+}
+
+/* 暗色模式适配 */
+[data-mode="dark"] #archives .year-header {
+  border-bottom-color: #495057;
+}
+
+[data-mode="dark"] #archives .month-content li::before {
+  background: #6c757d;
+}
+
+[data-mode="dark"] #archives .month-content li::after {
+  background: #495057;
+}
+</style>
+
+<div id="archives" class="pl-xl-3">
+  {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+  {% for year_group in posts_by_year %}
+  <div class="archive-year">
+    <div class="year-header" data-bs-toggle="collapse" data-bs-target="#year-{{ year_group.name }}" aria-expanded="true" aria-controls="year-{{ year_group.name }}">
+      <time class="year lead">{{ year_group.name }}</time>
+      <span class="post-count">{{ year_group.items | size }} 篇</span>
+      <i class="fas fa-fw fa-angle-down collapse-icon"></i>
+    </div>
+    <div id="year-{{ year_group.name }}" class="collapse show">
+      {% assign posts_by_month = year_group.items | group_by_exp: "post", "post.date | date: '%m'" %}
+      {% for month_group in posts_by_month %}
+      <div class="archive-month">
+        <div class="month-header" data-bs-toggle="collapse" data-bs-target="#month-{{ year_group.name }}-{{ month_group.name }}" aria-expanded="true" aria-controls="month-{{ year_group.name }}-{{ month_group.name }}">
+          <span class="month">{{ month_group.name | plus: 0 }}月</span>
+          <span class="post-count">{{ month_group.items | size }} 篇</span>
+          <i class="fas fa-fw fa-angle-down collapse-icon"></i>
+        </div>
+        <div id="month-{{ year_group.name }}-{{ month_group.name }}" class="collapse show">
+          <ul class="list-unstyled">
+            {% for post in month_group.items %}
+            <li>
+              {% assign ts = post.date | date: '%s' %}
+              <span class="date day" data-ts="{{ ts }}" data-df="DD">{{ post.date | date: '%d' }}</span>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
