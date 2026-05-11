@@ -1,0 +1,101 @@
+<!-- Site Statistics Panel -->
+<section class="site-stats">
+  <h3 class="panel-heading">
+    <i class="fas fa-chart-bar fa-fw me-1"></i>
+    {{ site.data.locales[include.lang].panel.stats | default: "站点统计" }}
+  </h3>
+
+  <!-- Busuanzi: Site PV/UV -->
+  <div class="stats-item">
+    <span class="stats-label">
+      <i class="fas fa-eye fa-fw me-1"></i>访问量
+    </span>
+    <span class="stats-value">
+      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-xs"></i></span> 次
+    </span>
+  </div>
+
+  <div class="stats-item">
+    <span class="stats-label">
+      <i class="fas fa-users fa-fw me-1"></i>访客数
+    </span>
+    <span class="stats-value">
+      <span id="busuanzi_value_site_uv"><i class="fas fa-spinner fa-spin fa-xs"></i></span> 人
+    </span>
+  </div>
+
+  <!-- Waline Pageview for current article (only on post pages) -->
+  {% if page.layout == 'post' %}
+  <div class="stats-item">
+    <span class="stats-label">
+      <i class="fas fa-book-reader fa-fw me-1"></i>本文阅读
+    </span>
+    <span class="stats-value">
+      {% if site.comments.waline.server_url %}
+      <span id="waline-pageview" data-path="{{ page.url }}"><i class="fas fa-spinner fa-spin fa-xs"></i></span> 次
+      {% else %}
+      <span class="text-muted">待配置</span>
+      {% endif %}
+    </span>
+  </div>
+  {% endif %}
+
+  <!-- Site Running Time -->
+  <div class="stats-item">
+    <span class="stats-label">
+      <i class="fas fa-clock fa-fw me-1"></i>运行时间
+    </span>
+    <span class="stats-value" id="site-running-time">
+      <i class="fas fa-spinner fa-spin fa-xs"></i>
+    </span>
+  </div>
+</section>
+
+<!-- Busuanzi JS -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- Running Time JS -->
+<script>
+(function() {
+  var startDate = new Date('{{ site.site_since | default: "2026-04-07" }}');
+  function updateRunningTime() {
+    var now = new Date();
+    var diff = now - startDate;
+    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    var el = document.getElementById('site-running-time');
+    if (el) {
+      el.textContent = days + ' 天 ' + hours + ' 时 ' + minutes + ' 分';
+    }
+  }
+  updateRunningTime();
+  setInterval(updateRunningTime, 60000);
+})();
+</script>
+
+<!-- Waline Pageview JS (only on post pages and when server_url is configured) -->
+{% if page.layout == 'post' and site.comments.waline.server_url %}
+<script>
+(function() {
+  var serverURL = '{{ site.comments.waline.server_url }}';
+  var path = '{{ page.url }}';
+  fetch(serverURL + '/api/article', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ path: path })
+  }).then(function(r) { return r.json(); })
+  .then(function(res) {
+    var el = document.getElementById('waline-pageview');
+    if (el && res.data && res.data[0]) {
+      el.textContent = res.data[0].time;
+    } else if (el) {
+      el.textContent = '0';
+    }
+  }).catch(function() {
+    var el = document.getElementById('waline-pageview');
+    if (el) el.textContent = '-';
+  });
+})();
+</script>
+{% endif %}

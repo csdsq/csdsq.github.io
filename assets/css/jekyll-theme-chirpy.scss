@@ -1,0 +1,48 @@
+/* Custom styles for Chirpy theme */
+
+/* === Site Statistics Panel === */
+#panel-wrapper .site-stats {
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  border-top: 1px solid var(--main-border-color, #dee2e6);
+}
+
+#panel-wrapper .site-stats .panel-heading {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--heading-color, #2a2a2a);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--main-border-color, #dee2e6);
+}
+
+#panel-wrapper .site-stats .stats-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 0;
+  font-size: 0.85rem;
+}
+
+#panel-wrapper .site-stats .stats-label {
+  color: var(--text-muted-color, #6c757d);
+}
+
+#panel-wrapper .site-stats .stats-value {
+  color: var(--heading-color, #2a2a2a);
+  font-weight: 500;
+}
+
+/* Dark mode adjustments */
+[data-mode="dark"] #panel-wrapper .site-stats {
+  border-top-color: #495057;
+}
+
+[data-mode="dark"] #panel-wrapper .site-stats .panel-heading {
+  color: var(--heading-color, #e0e0e0);
+  border-bottom-color: #495057;
+}
+
+[data-mode="dark"] #panel-wrapper .site-stats .stats-value {
+  color: var(--heading-color, #e0e0e0);
+}
