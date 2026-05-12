@@ -1,4 +1,4 @@
-<\!-- Site Info Panel -->
+<!-- Site Info Panel -->
 <section id="site-stats">
   <h2 class="panel-heading">站点信息</h2>
   <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
@@ -9,18 +9,16 @@
       <i class="fas fa-users fa-fw me-1"></i>访客数 <span id="busuanzi_value_site_uv"><i class="fas fa-spinner fa-spin fa-xs"></i></span> 人
     </li>
     <li class="text-truncate lh-lg">
-      <i class="fas fa-calendar-alt fa-fw me-1"></i>建站日期 {{ site.site_since | default: "2026-04-07" }}
+      <i class="fas fa-clock fa-fw me-1"></i>运行 <span id="site-running-time"><i class="fas fa-spinner fa-spin fa-xs"></i></span> 天
     </li>
     <li class="text-truncate lh-lg">
-      <i class="fas fa-clock fa-fw me-1"></i>运行 <span id="site-running-time"><i class="fas fa-spinner fa-spin fa-xs"></i></span> 天
+      <i class="fas fa-calendar-alt fa-fw me-1"></i>建站 {{ site.site_since | default: "2026-04-07" }}
     </li>
   </ul>
 </section>
 
-<\!-- Busuanzi JS -->
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<\!-- Running Time JS -->
 <script>
 (function() {
   var startDate = new Date('{{ site.site_since | default: "2026-04-07" }}');
