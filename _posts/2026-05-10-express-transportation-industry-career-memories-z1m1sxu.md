@@ -1,6 +1,12 @@
 ---
 title: 快递运输业从业记忆
 date: '2026-05-10 10:21:16'
+categories:
+  - 工作
+tags:
+  - 经历
+  - 快递
+  - 杂谈
 permalink: /post/express-transportation-industry-career-memories-z1m1sxu.html
 layout: post
 published: true
