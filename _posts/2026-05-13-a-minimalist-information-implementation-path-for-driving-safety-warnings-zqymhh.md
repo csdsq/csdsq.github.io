@@ -1,6 +1,13 @@
 ---
 title: 出车安全告诫的极简信息化实现路径
 date: '2026-05-13 18:00:12'
+categories:
+  - 工作
+tags:
+  - 交通安全
+  - 培训
+  - 信息化
+  - 工具
 permalink: >-
   /post/a-minimalist-information-implementation-path-for-driving-safety-warnings-zqymhh.html
 layout: post
@@ -9,9 +16,7 @@ published: true
 
 
 
-# 出车安全告诫的极简信息化实现路径
 
-‍
 
 ‍
 
