@@ -1,6 +1,12 @@
 ---
 title: 通过远程定位找回了丢失5天的手机
 date: '2026-05-16 07:10:44'
+categories:
+  - 生活
+tags:
+  - 云服务
+  - 手机
+  - 技能
 permalink: >-
   /post/a-mobile-phone-that-had-been-lost-for-5-days-was-recovered-through-remote-positioning-zmcnpy.html
 layout: post
