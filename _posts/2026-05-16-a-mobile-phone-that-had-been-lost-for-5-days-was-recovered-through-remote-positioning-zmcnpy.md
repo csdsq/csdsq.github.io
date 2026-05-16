@@ -41,7 +41,7 @@ published: true
 
 惊喜出现了，之前丢失的手机处于开机状态，而且位置定位很准确位于某宾馆，连接的WiFi名称显示FAST-A214，应该就是位于宾馆的214房间。
 
-![image](http://10.0.0.7:6806/assets/image-20260516083644-c6trsyg.png)
+![image](https://blog.hser.ren/assets/20260516084926.png)
 
 ‍
 
