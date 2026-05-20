@@ -1,6 +1,12 @@
 ---
 title: 扬州简游小记
 date: '2026-05-20 18:02:59'
+categories:
+  - 生活
+tags:
+  - 休闲
+  - 游记
+  - 美食
 permalink: /post/brief-travel-notes-on-yangzhou-1w4eq6.html
 layout: post
 published: true
