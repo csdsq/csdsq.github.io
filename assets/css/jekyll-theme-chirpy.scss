@@ -1,7 +1,7 @@
 /* Custom styles for Chirpy theme */
 
 /* 文章正文图片自动缩放 */
-.post-content p > img,
+.post-content p img,
 .post-content .img-wrapper img {
   max-width: 40%;
   height: auto;
@@ -13,7 +13,7 @@
 
 /* 移动端图片铺满 */
 @media (max-width: 768px) {
-  .post-content p > img,
+  .post-content p img,
   .post-content .img-wrapper img {
     max-width: 100%;
   }
