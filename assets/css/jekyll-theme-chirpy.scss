@@ -1,20 +1,30 @@
-/* Custom styles for Chirpy theme */
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == "production" -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
 
 /* 文章正文图片自动缩放 */
 .content p img,
 .content .img-link img {
-  max-width: 40%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 0.5rem;
+  max-width: 40% !important;
+  height: auto !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-radius: 0.5rem !important;
 }
 
 /* 移动端图片铺满 */
 @media (max-width: 768px) {
   .content p img,
   .content .img-link img {
-    max-width: 100%;
+    max-width: 100% !important;
   }
 }
