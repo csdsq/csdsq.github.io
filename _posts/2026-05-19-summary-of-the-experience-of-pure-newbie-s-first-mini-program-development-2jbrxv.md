@@ -1,6 +1,11 @@
 ---
 title: 纯小白的首个小程序开发经验总结
-date: '2026-05-19 19:26:43'
+date: '2026-05-22 19:26:43'
+categories:
+  - 生活
+tags:
+  - 开发
+  - 总结
 permalink: >-
   /post/summary-of-the-experience-of-pure-newbie-s-first-mini-program-development-2jbrxv.html
 layout: post
