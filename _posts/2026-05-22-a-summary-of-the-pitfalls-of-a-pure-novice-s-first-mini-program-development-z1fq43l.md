@@ -1,6 +1,13 @@
 ---
 title: 纯小白的首个小程序开发踩坑总结
 date: '2026-05-22 21:16:35'
+categories:
+  - 生活
+tags:
+  - AI
+  - 开发
+  - 总结
+  - 软件
 permalink: >-
   /post/a-summary-of-the-pitfalls-of-a-pure-novice-s-first-mini-program-development-z1fq43l.html
 layout: post
