@@ -3,8 +3,6 @@ title: AI应用：7天用AI开发并上线了一个安全小程序
 date: '2026-05-21 20:40:38'
 categories:
   - EHS
-  - 工作
-  - 软件
 tags:
   - AI
   - 开发
