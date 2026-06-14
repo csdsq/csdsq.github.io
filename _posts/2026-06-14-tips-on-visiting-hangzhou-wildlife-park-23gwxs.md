@@ -1,6 +1,13 @@
 ---
 title: 杭州野生动物园游玩小记
 date: '2026-06-14 08:54:13'
+categories:
+  - 生活
+tags:
+  - 游玩
+  - 休闲
+  - 随笔
+  - 攻略
 permalink: /post/tips-on-visiting-hangzhou-wildlife-park-23gwxs.html
 layout: post
 published: true
