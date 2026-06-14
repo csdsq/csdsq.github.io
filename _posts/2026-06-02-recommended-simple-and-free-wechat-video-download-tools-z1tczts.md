@@ -1,6 +1,11 @@
 ---
 title: 简单免费的微信视频下载工具推荐
 date: '2026-06-02 18:53:46'
+categories:
+  - 软件
+tags:
+  - 小程序
+  - 微信
 permalink: /post/recommended-simple-and-free-wechat-video-download-tools-z1tczts.html
 layout: post
 published: true
