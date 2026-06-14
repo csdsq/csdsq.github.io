@@ -41,9 +41,9 @@ published: true
 
 在这个动物园第一次发现能够有近距离接触动物的设置。比如孔雀、银鸥，都是把动物圈起来，然后设置一个进出门。这样游客穿过门之后就可以直接和动物接触了，就算不买喂养动物的零食，也可近距离观察动物。这样带来的另一个好处就是可以拍照更出片。
 
-![image](http://10.0.0.7:6806/assets/image-20260614094419-7s18h20.png)
+![image](https://blog.hser.ren/assets/20260614111527.png)
 
-![image](http://10.0.0.7:6806/assets/image-20260614094439-zed3pfb.png)
+![image](https://blog.hser.ren/assets/20260614111530.png)
 
 ‍
 
