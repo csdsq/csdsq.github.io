@@ -1,6 +1,12 @@
 ---
 title: 我为什么烧5亿tokens做一个落伍的EHS信息站
 date: '2026-06-14 11:31:50'
+categories:
+  - EHS
+tags:
+  - AI
+  - 漫谈
+  - 随笔
 permalink: >-
   /post/why-did-i-burn-500-million-tokens-to-build-an-outdated-ehs-information-station-5yupr.html
 layout: post
