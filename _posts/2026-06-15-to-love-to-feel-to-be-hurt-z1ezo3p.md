@@ -2,6 +2,12 @@
 title: “去爱，去感受，去受伤”
 date: '2026-06-15 19:02:47'
 permalink: /post/to-love-to-feel-to-be-hurt-z1ezo3p.html
+categories:
+  - 生活
+tags:
+  - 剧集
+  - 观后感
+  - 随笔
 layout: post
 published: true
 ---
