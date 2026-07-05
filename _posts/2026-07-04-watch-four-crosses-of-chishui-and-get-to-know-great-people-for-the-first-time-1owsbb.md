@@ -1,8 +1,13 @@
 ---
 title: 观《四渡赤水》，初识伟人
-date: '2026-07-05 10:02:30'
+date: '2026-07-04 10:02:30'
 permalink: >-
   /post/watch-four-crosses-of-chishui-and-get-to-know-great-people-for-the-first-time-1owsbb.html
+  categories:
+  - 生活
+tags:
+  - 电源
+  - 观后感
 layout: post
 published: true
 ---
