@@ -2,6 +2,12 @@
 title: 观《装腔启示录》
 date: '2026-07-05 08:59:35'
 permalink: /post/watch-the-apocalypse-of-pretending-1frogk.html
+categories:
+  - 生活
+tags:
+  - 电视剧
+  - 观后感
+  - 爱情
 layout: post
 published: true
 ---
