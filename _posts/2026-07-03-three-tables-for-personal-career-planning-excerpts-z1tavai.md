@@ -1,7 +1,13 @@
 ---
 title: 个人职业规划三张表（摘录）
-date: '2026-07-05 11:25:46'
+date: '2026-07-03 11:25:46'
 permalink: /post/three-tables-for-personal-career-planning-excerpts-z1tavai.html
+categories:
+  - 工作
+tags:
+  - 书籍
+  - 观后感
+  - 书摘
 layout: post
 published: true
 ---
