@@ -1,6 +1,11 @@
 ---
 title: 小红书招聘感受杂谈
 date: '2026-07-18 07:09:39'
+categories:
+  - 工作
+tags:
+  - 招聘
+  - 杂谈
 permalink: /post/xiaohongshu-recruitment-experience-z1xbbby.html
 layout: post
 published: true
