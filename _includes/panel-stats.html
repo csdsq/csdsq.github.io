@@ -6,10 +6,10 @@
       <i class="fas fa-file-alt fa-fw me-1"></i>文章数 {{ site.posts | size }} 篇
     </li>
     <li class="text-truncate lh-lg">
-      <i class="fas fa-eye fa-fw me-1"></i>访问量 <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-xs"></i></span> 次
+      <i class="fas fa-eye fa-fw me-1"></i>访问量 <span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-xs"></i></span></span> 次
     </li>
     <li class="text-truncate lh-lg">
-      <i class="fas fa-users fa-fw me-1"></i>访客数 <span id="busuanzi_value_site_uv"><i class="fas fa-spinner fa-spin fa-xs"></i></span> 人
+      <i class="fas fa-users fa-fw me-1"></i>访客数 <span id="busuanzi_container_site_uv"><span id="busuanzi_value_site_uv"><i class="fas fa-spinner fa-spin fa-xs"></i></span></span> 人
     </li>
     <li class="text-truncate lh-lg">
       <i class="fas fa-shield-alt fa-fw me-1"></i>安全运行 <span id="site-running-time"><i class="fas fa-spinner fa-spin fa-xs"></i></span> 天
@@ -19,18 +19,27 @@
     </li>
   </ul>
 </section>
-
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
 <script>
 (function() {
+  // 安全运行时间
   var startDate = new Date('{{ site.site_since | default: "2026-04-07" }}');
   var now = new Date();
   var diff = now - startDate;
   var days = Math.floor(diff / (1000 * 60 * 60 * 24));
   var el = document.getElementById('site-running-time');
-  if (el) {
-    el.textContent = days;
-  }
+  if (el) el.textContent = days;
+
+  // 不算子超时兜底：3秒后还在转圈就显示"--"
+  setTimeout(function() {
+    var pv = document.getElementById('busuanzi_value_site_pv');
+    var uv = document.getElementById('busuanzi_value_site_uv');
+    if (pv && pv.querySelector('.fa-spinner')) {
+      pv.textContent = '--';
+    }
+    if (uv && uv.querySelector('.fa-spinner')) {
+      uv.textContent = '--';
+    }
+  }, 3000);
 })();
 </script>
