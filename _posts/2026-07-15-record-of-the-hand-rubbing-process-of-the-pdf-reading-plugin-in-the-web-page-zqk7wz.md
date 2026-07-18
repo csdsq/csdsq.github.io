@@ -1,7 +1,7 @@
 ---
 title: 网页内PDF阅读插件手搓过程记录
 date: '2026-07-15 18:02:10'
-  categories:
+categories:
   - 软件
 tags:
   - AI
@@ -73,8 +73,6 @@ published: true
 密码:165g
 
 ‍
-
-[pdf-viewer-standalone.7z](assets/pdf-viewer-standalone-20260715180234-7rs1r8v.7z)
 
 ‍
 
