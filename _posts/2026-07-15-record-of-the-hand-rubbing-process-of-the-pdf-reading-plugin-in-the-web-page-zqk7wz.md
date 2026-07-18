@@ -1,6 +1,12 @@
 ---
 title: 网页内PDF阅读插件手搓过程记录
 date: '2026-07-15 18:02:10'
+  categories:
+  - 软件
+tags:
+  - AI
+  - PDF
+  - 网站
 permalink: >-
   /post/record-of-the-hand-rubbing-process-of-the-pdf-reading-plugin-in-the-web-page-zqk7wz.html
 layout: post
