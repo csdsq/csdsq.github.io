@@ -1,6 +1,12 @@
 ---
 title: AI浪潮下的BI拓展实践
 date: '2026-08-29 09:15:18'
+categories:
+  - 工作
+tags:
+  - AI
+  - 感悟
+  - 杂谈
 permalink: /post/bi-expansion-practice-under-the-wave-of-ai-2u5pcl.html
 layout: post
 published: true
