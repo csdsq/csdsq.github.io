@@ -70,46 +70,46 @@ published: true
 
 另外，以上语录也制作成了贴图，一并存档记录。
 
-![弗洛伊德语录卡片生成 2 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105545-tp0jmui.png)
+![弗洛伊德语录卡片生成 2 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105545-tp0jmui.jpg)
 
-![弗洛伊德语录卡片生成 1 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105836-rfjy45s.png)
+![弗洛伊德语录卡片生成 1 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105836-rfjy45s.jpg)
 
-![弗洛伊德语录卡片生成 3 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105836-pjw3rux.png)
+![弗洛伊德语录卡片生成 3 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105836-pjw3rux.jpg)
 
-![弗洛伊德语录卡片生成 4 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105841-t499e0g.png)
+![弗洛伊德语录卡片生成 4 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105841-t499e0g.jpg)
 
-![弗洛伊德语录卡片生成 5 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105841-snrdktg.png)
+![弗洛伊德语录卡片生成 5 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105841-snrdktg.jpg)
 
-![弗洛伊德语录卡片生成 6 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105841-3012b0k.png)
+![弗洛伊德语录卡片生成 6 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105841-3012b0k.jpg)
 
-![弗洛伊德语录卡片生成 7 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105840-8jmlhce.png)
+![弗洛伊德语录卡片生成 7 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105840-8jmlhce.jpg)
 
-![弗洛伊德语录卡片生成 8 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105840-hs285gi.png)
+![弗洛伊德语录卡片生成 8 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105840-hs285gi.jpg)
 
-![弗洛伊德语录卡片生成 9 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105839-11u5sh5.png)
+![弗洛伊德语录卡片生成 9 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105839-11u5sh5.jpg)
 
-![弗洛伊德语录卡片生成 10 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105839-5cnm73o.png)
+![弗洛伊德语录卡片生成 10 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105839-5cnm73o.jpg)
 
-![弗洛伊德语录卡片生成 11 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105839-b6xqke3.png)
+![弗洛伊德语录卡片生成 11 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105839-b6xqke3.jpg)
 
-![弗洛伊德语录卡片生成 12 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105839-brh05yr.png)
+![弗洛伊德语录卡片生成 12 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105839-brh05yr.jpg)
 
-![弗洛伊德语录卡片生成 13 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105839-jglk3im.png)
+![弗洛伊德语录卡片生成 13 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105839-jglk3im.jpg)
 
-![弗洛伊德语录卡片生成 14 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105838-ocgq4fc.png)
+![弗洛伊德语录卡片生成 14 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105838-ocgq4fc.jpg)
 
-![弗洛伊德语录卡片生成 15 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105838-alpidmb.png)
+![弗洛伊德语录卡片生成 15 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105838-alpidmb.jpg)
 
-![弗洛伊德语录卡片生成 16 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105838-njvj62s.png)
+![弗洛伊德语录卡片生成 16 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105838-njvj62s.jpg)
 
-![弗洛伊德语录卡片生成 17 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105837-d7jj5lk.png)
+![弗洛伊德语录卡片生成 17 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105837-d7jj5lk.jpg)
 
-![弗洛伊德语录卡片生成 18 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105837-iyxcsyp.png)
+![弗洛伊德语录卡片生成 18 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105837-iyxcsyp.jpg)
 
-![弗洛伊德语录卡片生成 19 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105837-beeqvsb.png)
+![弗洛伊德语录卡片生成 19 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105837-beeqvsb.jpg)
 
-![弗洛伊德语录卡片生成 20 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105836-7yvp94g.png)
+![弗洛伊德语录卡片生成 20 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105836-7yvp94g.jpg)
 
-![弗洛伊德语录卡片生成 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105836-ocx5gvh.png)
+![弗洛伊德语录卡片生成 NXPowerLite 副本](https://blog.hser.ren/assets/20261024105836-ocx5gvh.jpg)
 
 ‍
