@@ -1,6 +1,12 @@
 ---
 title: 精神分析的目标-摘抄
 date: '2026-10-24 09:29:15'
+categories:
+  - 生活
+tags:
+  - 读书
+  - 书摘
+  - 贴图
 permalink: /post/the-goals-of-psychoanalysis-excerpt-1oc2qc.html
 layout: post
 published: true
