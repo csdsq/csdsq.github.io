@@ -1,6 +1,12 @@
 ---
 title: 《爱的辛劳》读书笔记
 date: '2026-10-25 10:04:05'
+categories:
+  - 生活
+tags:
+  - 读书
+  - 心理咨询
+  - 精神分析
 permalink: /post/the-labor-of-love-reading-notes-z24arsf.html
 layout: post
 published: true
